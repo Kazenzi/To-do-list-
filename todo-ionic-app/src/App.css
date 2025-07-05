@@ -1,0 +1,74 @@
+/* src/App.css */
+
+/* Basic body styling for consistent background */
+body {
+  --ion-background-color: #f4f5f8; /* Light gray background */
+}
+
+/* Style for completed todo text */
+.completed-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Custom input styling */
+.custom-input {
+  --padding-start: 0; /* Remove default padding from IonInput */
+  --padding-end: 0;
+  --placeholder-color: #999;
+  --placeholder-opacity: 0.8;
+  font-size: 1.1em;
+}
+
+/* Add button styling */
+.add-button {
+  --background: #007bff;
+  --background-hover: #0056b3;
+  --background-activated: #0056b3;
+  --color: #fff;
+  --border-radius: 4px;
+  margin-left: 10px;
+}
+
+/* Delete button styling */
+.delete-button {
+  --background: #dc3545;
+  --background-hover: #c82333;
+  --background-activated: #c82333;
+  --color: #fff;
+  --border-radius: 4px;
+}
+
+/* Message for no tasks */
+.no-tasks-message {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  padding: 20px;
+}
+
+/* Ensure form and list are well-spaced */
+ion-content {
+  --padding-top: 20px;
+  --padding-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+ion-list {
+  background: var(--ion-background-color); /* Match list background to page background */
+}
+
+ion-item {
+  --background: #fff; /* White background for list items */
+  --border-radius: 8px;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Ensure the checkbox and label are aligned */
+ion-item ion-checkbox {
+  margin-right: 10px;
+}
